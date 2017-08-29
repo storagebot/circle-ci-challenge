@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env
+npm-debug.log*
+
+# macOS
+.DS_Store

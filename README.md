@@ -1,4 +1,4 @@
-# circle-ci-challenge
+# circle-ci-challenge [![CircleCI](https://circleci.com/gh/agender/circle-ci-challenge.svg?style=svg&circle-token=4a8dee924475fbf2f677edc8b61be78b26fcd363)](https://circleci.com/gh/agender/circle-ci-challenge)
 
 I built this app using [React][react], [Enzyme][enzyme] and [Jest][jest]. I also configured the repo with [CircleCI][circleci] for continuous integration and continuous deployment (with deployments going to [Heroku][heroku]).
 

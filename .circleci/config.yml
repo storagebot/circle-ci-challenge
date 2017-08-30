@@ -17,7 +17,7 @@ jobs:
            - node_modules
          key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm test
-      - run: sudo bash .circleci/setup-heroku.sh
+      - run: bash .circleci/setup-heroku.sh
       - add_ssh_keys:
          fingerprints:
            - "3e:17:59:7b:15:7d:27:31:fa:49:a9:b9:e4:89:7e:c3"
@@ -26,6 +26,6 @@ jobs:
          command: |
            if [ "${CIRCLE_BRANCH}" == "master" ]; then
              git push heroku master --force
-             sudo heroku run npm start deploy
-             sudo heroku restart
+             heroku run npm start deploy
+             heroku restart
            fi
